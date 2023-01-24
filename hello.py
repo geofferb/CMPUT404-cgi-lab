@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+
+import os
+import json
+print("Content-Type:text/html")
+print()
+# print(json.dumps(dict(os.environ)))
+QUERY_STRING = 'QUERY_STRING'
+
+print(f"<p>HTTP_USER_AGENT = {os.environ['HTTP_USER_AGENT']}</p>")
+print(f"<p>QUERY_STRING = {os.environ[QUERY_STRING]}</p>")
